@@ -8,8 +8,8 @@ const fetch = require('cross-fetch');
 */
 
 async function fnTest() {
-  const methods = {method : "POST", headers: {"Content-type" : "application/json",}}
-  const response = await fetch("https://jsonplaceholder.typicode.com/posts", methods)
+  const methods = {method : "POST", headers: {"Content-type" : "application/json"}};
+  const response = await fetch("https://jsonplaceholder.typicode.com/posts", methods);
   const posts = await response.json();
   return posts;
 }
