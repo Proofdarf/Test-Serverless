@@ -14,7 +14,7 @@ const fetch = require('cross-fetch');
 
 
 async function fnTest(id) {
-    const methods = {method : "PUT", headers: {"Content-type" : "application/json"}};
+    const methods = {method : "PUT", headers: {"Content-type" : "application/json"}}
     const response = await fetch("https://jsonplaceholder.typicode.com/posts/"+id, methods);
   return response;
 }
